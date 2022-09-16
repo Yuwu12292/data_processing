@@ -1,0 +1,158 @@
+#使用new_target_video.py,查看play_back文件夹中是否有更新，获取要提取图片的目标视频
+#使用new_target_video.py,更改【determination1和data2_path】的“default:”就行
+
+#使用create_config_json_path.py,创建图片提取用到的stream_filter和config.json和存储位置（config.json里的"path"）
+#使用create_config_json_path.py,更改【determination1和path】的“default:”就行
+
+#使用create_config_json_path.py后,terminal切换到determination1对应路径下：./stream_filter 视频名.mp4，回车提取图片
+
+#使用new_integrate.py,将多个视频提取的图片整合在一个文件夹下
+#使用new_integrate.py,更改【determination2和path】的“default:”就行
+
+#使用new_pic_key_value.py,生成当前所有图片的字典文件，存储为"pic_key_value_生成日期.npy"
+#使用new_pic_key_value.py,更改【pic_key_value_name】的“default:”就行
+
+#使用rename_new_label.py前,从平台上创建新标签并下载
+#使用rename_new_label.py,给新标签重命名
+#使用rename_new_label.py,更改【data4_path和Raw_label_rename_path】的“default:”就行
+
+#使用rr_Raw_label_rename.py,读取重命名后的文件夹Raw_label_rename，将其中不存在于old_hw的内容重新复制回未处理的标签文件夹data2_path下,同时在old_hw路径下补上
+#使用rr_Raw_label_rename.py,更改【data4_path和Raw_label_rename_path】的“default:”就行
+
+#使用add_prefix_subfolders.py,划分出已经在valid集里的，将待处理成一个大文件的的放进zip_json
+#使用add_prefix_subfolders.py,更改【val_key_value_name】的“default:”就行
+
+#使用make_coco.py,制作当天coco文件
+#使用make_coco.py,更改【same_day_nm和sub】的“default:”就行
+
+#使用make_coco.py,制作当天的json文件为train_valid文件,并选择是否更新val字典({...,'hw101.jilin-ai.com_33_D20220714180000_20220715060000_0-0000078120': 'hw101.jilin-ai.com_33_D20220714180000_20220715060000_0-0000078120.json'})
+#使用make_coco.py,更改【train_out_nm,val_out_nm,train_split_num,valid_split_num,valid_split_num和sub】的“default:”就行
+
+#使用make_Unusual_imagess.py,检查生成的json文件是否有打不开的图片
+#使用make_Unusual_imagess.py,更改【coco_val_json_name和Unusual_imagess】的“default:”就行
+
+#使用delete_Unusual_imagess.py,将有问题的json移除
+#使用delete_Unusual_imagess.py,更改【Unusual_imagess】的“default:”就行
+
+#使用new_connect_json.py,任意拼接选中的json,必要时生成val字典
+#使用new_connect_json.py,更改【coco_val_json_name,path_list,create_val_key和new_val_key_value_name】的“default:”就行
+determination1:  
+  type: str
+  # default: ./f4/videos
+  default: /mnt/RDTeam/01_BDAI/yanglaoyuan_data/stream_filter/target/20220913
+  help: '选出的新视频存放路径'
+data1_path:  
+  type: str
+  # default: ./f4/old
+  default: /mnt/RDTeam/01_BDAI/yanglaoyuan_data/stream_filter/old
+  help: '以所有处理过的视频名命名的空文件夹路径 (type=str)'
+data2_path: 
+  type: str
+  # default: ./f4/play_back/
+  default: /mnt/RDTeam/01_BDAI/yanglaoyuan_data/play_back/
+  help: '待筛查的类型文件路径（未成功脱敏、缺失状态、无护工图片现象、其它）'
+determination2:  
+  type: str
+  # default: ./f4/Image
+  default: /mnt/RDTeam/01_BDAI/yanglaoyuan_data/Image/20220913/play_back_qita
+  help: '提取出的图片整合后所存放路径'
+path:  
+  type: str
+  # default: ./f4/images # check_play_back同级
+  # default: /home/stream_filter/CORE/20220907/f4/images
+  default: /mnt/RDTeam/01_BDAI/yanglaoyuan_data/stream_filter/picture_extract_p26/20220913
+  help: '要被整合到一个文件夹的图片存储总路径'
+img_root:  
+  type: str
+  default: ./f4/Image
+  help: '所有图片总路径————Image路径'
+pic_key_value_name: 
+  type: str
+  default: pic_key_value_20220909.npy
+  help: 存储所有图片的字典文件
+data4_path: 
+  type: str
+  default: ./f4/Raw_label/
+  # default: ./f4/test/
+  help: '读取20220826下载的新标签'
+Raw_label_rename_path: 
+  type: str
+  default: ./f4/Raw_label_rename
+  help: '重命名后放在Raw_label_rename文件夹'
+data3_path: 
+  type: str
+  default: ./f4/old_hw
+  help: '之前下载的label'
+zip_json_path:  
+  type: str
+  default: ./f4/zip_json
+  help: '存待生成整合json的文件'
+zip_json_valid_path: 
+  type: str
+  default: ./f4/zip_json_valid
+  help: '存已经是测试集字典里val_key_value内待整合json,这个可以运行后直接删除'
+val_key_value_name: 
+  type: str
+  default: val_key_value_20220913.npy
+  help: '存储之前所有测试集json的字典文件'
+coco_val_json_name:
+  type: str
+  default: './coco_valid_old_0913.json'
+  help: '测试集json文件'
+same_day_nm:
+  type: str
+  default: '/mnt/RDTeam/01_BDAI/yanglaoyuan_data/Coco/coco_valid_old_0905.json'
+train_out_nm:
+  type: str
+  default: '/mnt/RDTeam/01_BDAI/yanglaoyuan_data/Train_val_split/coco_20220829_train.json'
+val_out_nm:
+  type: str
+  default: '/mnt/RDTeam/01_BDAI/yanglaoyuan_data/Train_val_split/coco_20220829_val.json'
+  help: '测试集json文件'
+train_split_num:
+  type: int
+  default: 1000
+  help: '100000之前的json是训练集'
+valid_split_num:
+  type: int
+  default: 1000
+  help: '该数字之后的json是测试集'
+create_val_key:
+  type: str
+  default: 'no'
+  help: '是否创建测试集字典文件:"yes" or "no"'
+new_val_key_value_name: 
+  type: str
+  default: val_key_value_20220905.npy
+  help: '存储当前所有测试集json的字典文件'
+sub:
+  type: str
+  default: 'same_day'
+  help: '要创建train_valid还是same_day'
+Unusual_imagess:
+  type: str
+  default: Unusual_imagess_coco_20220905.npy
+  help: '有问题的图片字典'
+Raw_label_root:
+  type: str
+  default: /mnt/RDTeam/01_BDAI/yanglaoyuan_data/Raw_label
+  help: 'Raw_label文件夹'
+move_path:
+  type: str
+  default: /mnt/RDTeam/01_BDAI/yanglaoyuan_data/stream_filter/Unusual_imagess_0821_train_0
+  help: '有问题的Raw_label文件夹'
+path_list:
+  type: list
+  default: [
+    '/mnt/RDTeam/01_BDAI/yanglaoyuan_data/stream_filter/yanglaoyuan_Coco_20220818/new_coco.json'
+    ,'/mnt/RDTeam/01_BDAI/yanglaoyuan_data/stream_filter/yanglaoyuan_Coco_20220818/coco_zip_json_valid_new.json'
+  # ,'/mnt/RDTeam/01_BDAI/yanglaoyuan_data/stream_filter/yanglaoyuan_Coco_20220818/coco_zip_json_valid_old.json'
+  ,'/mnt/RDTeam/01_BDAI/yanglaoyuan_data/Coco/coco_20220817.json'
+  # ,'/mnt/RDTeam/01_BDAI/yanglaoyuan_data/Coco/coco_20220822.json'
+  # ,'/mnt/RDTeam/01_BDAI/yanglaoyuan_data/Coco/coco_20220826.json'
+  ]
+  help: '待拼接的json文件的路径'
+output_dir:
+  type: list
+  default: /mnt/RDTeam/01_BDAI/yanglaoyuan_data/test_issue_video_liang/data/3
+  help: '.data文件存储地址'
