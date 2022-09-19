@@ -1,0 +1,2742 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the YUM package.
+#
+# Yuri Chornoivan <yurchor@ukr.net>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-11 10:54-0500\n"
+"PO-Revision-Date: 2010-06-16 20:45+0300\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.1\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../callback.py:48 ../output.py:947 ../yum/rpmtrans.py:72
+msgid "Updating"
+msgstr "Оновлення"
+
+#: ../callback.py:49 ../yum/rpmtrans.py:73
+msgid "Erasing"
+msgstr "Вилучення"
+
+#: ../callback.py:50 ../callback.py:51 ../callback.py:53 ../output.py:946
+#: ../output.py:1659 ../yum/rpmtrans.py:74 ../yum/rpmtrans.py:75
+#: ../yum/rpmtrans.py:77
+msgid "Installing"
+msgstr "Встановлення"
+
+#: ../callback.py:52 ../callback.py:58 ../output.py:1484 ../yum/rpmtrans.py:76
+msgid "Obsoleted"
+msgstr "Став застарілим"
+
+#: ../callback.py:54 ../output.py:1070 ../output.py:1442 ../output.py:1491
+msgid "Updated"
+msgstr "Оновлено"
+
+#: ../callback.py:55 ../output.py:1438
+msgid "Erased"
+msgstr "Вилучено"
+
+#: ../callback.py:56 ../callback.py:57 ../callback.py:59 ../output.py:1068
+#: ../output.py:1434 ../output.py:1646
+msgid "Installed"
+msgstr "Встановлено"
+
+#: ../callback.py:130
+msgid "No header - huh?"
+msgstr "Немає заголовка — як це?"
+
+#: ../callback.py:168
+msgid "Repackage"
+msgstr "Перепакувати"
+
+#: ../callback.py:189
+#, python-format
+msgid "Error: invalid output state: %s for %s"
+msgstr "Помилка: некоректний стан виводу: %s для %s"
+
+#: ../callback.py:212
+#, python-format
+msgid "Erased: %s"
+msgstr "Вилучено: %s"
+
+#: ../callback.py:217 ../output.py:948 ../output.py:1648
+msgid "Removing"
+msgstr "Вилучення"
+
+#: ../callback.py:219 ../yum/rpmtrans.py:78
+msgid "Cleanup"
+msgstr "Очищення диска"
+
+#: ../cli.py:107
+#, python-format
+msgid "Command \"%s\" already defined"
+msgstr "Команду «%s» вже визначено"
+
+#: ../cli.py:119
+msgid "Setting up repositories"
+msgstr "Налаштування сховищ"
+
+#: ../cli.py:130
+msgid "Reading repository metadata in from local files"
+msgstr "Читання метаданих сховища з локальних файлів"
+
+#: ../cli.py:194 ../utils.py:193
+#, python-format
+msgid "Config Error: %s"
+msgstr "Помилка налаштування: %s"
+
+#: ../cli.py:197 ../cli.py:1272 ../utils.py:196
+#, python-format
+msgid "Options Error: %s"
+msgstr "Помилка у параметрах: %s"
+
+#: ../cli.py:227
+#, python-format
+msgid "  Installed: %s-%s at %s"
+msgstr "  Встановлено: %s-%s у %s"
+
+#: ../cli.py:229
+#, python-format
+msgid "  Built    : %s at %s"
+msgstr "  Зібрано    : %s о %s"
+
+#: ../cli.py:231
+#, python-format
+msgid "  Committed: %s at %s"
+msgstr "  Надіслано  : %s о %s"
+
+#: ../cli.py:270
+msgid "You need to give some command"
+msgstr "Вам слід вказати якусь команду"
+
+#: ../cli.py:284
+#, python-format
+msgid "No such command: %s. Please use %s --help"
+msgstr "Команди %s не виявлено. Будь ласка, скористайтеся командою %s --help"
+
+#: ../cli.py:314
+msgid "Disk Requirements:\n"
+msgstr "Вимоги до диска:\n"
+
+#: ../cli.py:316
+#, python-format
+msgid "  At least %dMB more space needed on the %s filesystem.\n"
+msgstr ""
+"  Потрібно принаймні ще %d МБ простору на диску для файлової системи %s.\n"
+
+#. TODO: simplify the dependency errors?
+#. Fixup the summary
+#: ../cli.py:321
+msgid ""
+"Error Summary\n"
+"-------------\n"
+msgstr ""
+"Резюме помилок\n"
+"-------------\n"
+
+#: ../cli.py:364
+msgid "Trying to run the transaction but nothing to do. Exiting."
+msgstr ""
+"Спроба виконання операції за умови порожнього списку операцій. Завершуємо "
+"роботу."
+
+#: ../cli.py:403
+msgid "Exiting on user Command"
+msgstr "Завершення роботи за бажанням користувача"
+
+#: ../cli.py:407
+msgid "Downloading Packages:"
+msgstr "Звантаження пакунків:"
+
+#: ../cli.py:412
+msgid "Error Downloading Packages:\n"
+msgstr "Помилка завантаження пакетів:\n"
+
+#: ../cli.py:426 ../yum/__init__.py:4195
+msgid "Running rpm_check_debug"
+msgstr "Виконання rpm_check_debug"
+
+#: ../cli.py:435 ../yum/__init__.py:4204
+msgid "ERROR You need to update rpm to handle:"
+msgstr "ПОМИЛКА. Вам слід оновити rpm для обробки:"
+
+#: ../cli.py:437 ../yum/__init__.py:4207
+msgid "ERROR with rpm_check_debug vs depsolve:"
+msgstr "ПОМИЛКА у rpm_check_debug через depsolve:"
+
+#: ../cli.py:443
+msgid "RPM needs to be updated"
+msgstr "RPM слід оновити"
+
+#: ../cli.py:444
+#, python-format
+msgid "Please report this error in %s"
+msgstr "Будь ласка, повідомте про цю помилку за адресою %s"
+
+#: ../cli.py:450
+msgid "Running Transaction Test"
+msgstr "Запускається операція з перевірки"
+
+#: ../cli.py:466
+msgid "Transaction Check Error:\n"
+msgstr "Помилка під час перевірки операції:\n"
+
+#: ../cli.py:473
+msgid "Transaction Test Succeeded"
+msgstr "Операцію з перевірки успішно завершено"
+
+#: ../cli.py:495
+msgid "Running Transaction"
+msgstr "Виконання операції"
+
+#: ../cli.py:525
+msgid ""
+"Refusing to automatically import keys when running unattended.\n"
+"Use \"-y\" to override."
+msgstr ""
+"Автоматичне імпортування ключів під час некерованого запуску заборонено.\n"
+"Скасувати заборону можна параметром «-y»."
+
+#: ../cli.py:544 ../cli.py:578
+msgid "  * Maybe you meant: "
+msgstr "  * Можливо, ви хотіли використати: "
+
+#: ../cli.py:561 ../cli.py:569
+#, python-format
+msgid "Package(s) %s%s%s available, but not installed."
+msgstr "Доступні невстановлені пакунки %s%s%s."
+
+#: ../cli.py:575 ../cli.py:607 ../cli.py:687
+#, python-format
+msgid "No package %s%s%s available."
+msgstr "Пакунок %s%s%s недоступний."
+
+#: ../cli.py:612 ../cli.py:748
+msgid "Package(s) to install"
+msgstr "Пакунки, які слід встановити"
+
+#: ../cli.py:613 ../cli.py:693 ../cli.py:727 ../cli.py:749
+#: ../yumcommands.py:160
+msgid "Nothing to do"
+msgstr "Нічого виконувати"
+
+#: ../cli.py:647
+#, python-format
+msgid "%d packages marked for Update"
+msgstr "%d пакунків позначено для оновлення"
+
+#: ../cli.py:650
+msgid "No Packages marked for Update"
+msgstr "Для оновлення не позначено жодного пакунка"
+
+#: ../cli.py:664
+#, python-format
+msgid "%d packages marked for removal"
+msgstr "%d пакунків позначено для вилучення"
+
+#: ../cli.py:667
+msgid "No Packages marked for removal"
+msgstr "Для вилучення не позначено жодного пакунка"
+
+#: ../cli.py:692
+msgid "Package(s) to downgrade"
+msgstr "Пакунки, версію яких слід знизити"
+
+#: ../cli.py:717
+#, python-format
+msgid " (from %s)"
+msgstr " (з %s)"
+
+#: ../cli.py:719
+#, python-format
+msgid "Installed package %s%s%s%s not available."
+msgstr "Встановлений пакунок %s%s%s%s недоступний."
+
+#: ../cli.py:726
+msgid "Package(s) to reinstall"
+msgstr "Пакунки для перевстановлення"
+
+#: ../cli.py:739
+msgid "No Packages Provided"
+msgstr "Не надано жодного пакунка"
+
+#: ../cli.py:818
+#, python-format
+msgid "Matched: %s"
+msgstr "Відповідників: %s"
+
+#: ../cli.py:825
+#, python-format
+msgid "Warning: No matches found for: %s"
+msgstr "Попередження: відповідників %s не знайдено"
+
+#: ../cli.py:828
+msgid "No Matches found"
+msgstr "Не знайдено відповідників"
+
+#: ../cli.py:868
+#, python-format
+msgid ""
+"Warning: 3.0.x versions of yum would erroneously match against filenames.\n"
+" You can use \"%s*/%s%s\" and/or \"%s*bin/%s%s\" to get that behaviour"
+msgstr ""
+"Попередження: у версіях 3.0.x yum відповідність назв файлів встановлюється з "
+"помилками.\n"
+" Щоб знайти відповідники, вам слід скористатися «%s*/%s%s» і/або "
+"«%s*bin/%s%s»."
+
+#: ../cli.py:884
+#, python-format
+msgid "No Package Found for %s"
+msgstr "Пакунків з %s не знайдено"
+
+#: ../cli.py:896
+msgid "Cleaning up Everything"
+msgstr "Вилучення всього"
+
+#: ../cli.py:912
+msgid "Cleaning up Headers"
+msgstr "Вилучення заголовків"
+
+#: ../cli.py:915
+msgid "Cleaning up Packages"
+msgstr "Вилучення зайвих пакунків"
+
+#: ../cli.py:918
+msgid "Cleaning up xml metadata"
+msgstr "Вилучення метаданих xml"
+
+#: ../cli.py:921
+msgid "Cleaning up database cache"
+msgstr "Вилучення кешу бази даних"
+
+#: ../cli.py:924
+msgid "Cleaning up expire-cache metadata"
+msgstr "Вилучення метаданих застарілого кешу"
+
+#: ../cli.py:927
+msgid "Cleaning up cached rpmdb data"
+msgstr "Вилучення кешованих даних rpmdb"
+
+#: ../cli.py:930
+msgid "Cleaning up plugins"
+msgstr "Вилучення додатків"
+
+#: ../cli.py:955
+msgid "Installed Groups:"
+msgstr "Встановлені групи:"
+
+#: ../cli.py:967
+msgid "Available Groups:"
+msgstr "Наявні групи:"
+
+#: ../cli.py:977
+msgid "Done"
+msgstr "Виконано"
+
+#: ../cli.py:988 ../cli.py:1006 ../cli.py:1012 ../yum/__init__.py:2788
+#, python-format
+msgid "Warning: Group %s does not exist."
+msgstr "Попередження: групи з назвою %s не існує."
+
+#: ../cli.py:1016
+msgid "No packages in any requested group available to install or update"
+msgstr "У жодній з вказаних груп немає пакунків для встановлення або оновлення"
+
+#: ../cli.py:1018
+#, python-format
+msgid "%d Package(s) to Install"
+msgstr "%d пакунків для встановлення"
+
+#: ../cli.py:1028 ../yum/__init__.py:2800
+#, python-format
+msgid "No group named %s exists"
+msgstr "Групи з назвою %s не існує"
+
+#: ../cli.py:1034
+msgid "No packages to remove from groups"
+msgstr "Пакунків для вилучення з груп не знайдено"
+
+#: ../cli.py:1036
+#, python-format
+msgid "%d Package(s) to remove"
+msgstr "%d пакунків для вилучення"
+
+#: ../cli.py:1078
+#, python-format
+msgid "Package %s is already installed, skipping"
+msgstr "Пакунок %s вже встановлено, пропускаємо"
+
+#: ../cli.py:1089
+#, python-format
+msgid "Discarding non-comparable pkg %s.%s"
+msgstr "Відкинуто несумісний пакунок %s.%s"
+
+#. we've not got any installed that match n or n+a
+#: ../cli.py:1115
+#, python-format
+msgid "No other %s installed, adding to list for potential install"
+msgstr "Не встановлено інших %s, додаємо до списку потенційного встановлення"
+
+#: ../cli.py:1135
+msgid "Plugin Options"
+msgstr "Параметри додатка"
+
+#: ../cli.py:1143
+#, python-format
+msgid "Command line error: %s"
+msgstr "Помилка виконання команди: %s"
+
+#: ../cli.py:1156
+#, python-format
+msgid ""
+"\n"
+"\n"
+"%s: %s option requires an argument"
+msgstr ""
+"\n"
+"\n"
+"%s: для параметра %s потрібен аргумент"
+
+#: ../cli.py:1209
+msgid "--color takes one of: auto, always, never"
+msgstr "--color повинен мати один з аргументів: auto, always, never"
+
+#: ../cli.py:1319
+msgid "show this help message and exit"
+msgstr "показати це довідкове повідомлення і завершити роботу"
+
+#: ../cli.py:1323
+msgid "be tolerant of errors"
+msgstr "ігнорувати помилки"
+
+#: ../cli.py:1326
+msgid "run entirely from system cache, don't update cache"
+msgstr "запустити на основі системного кешу, не оновлювати кеш"
+
+#: ../cli.py:1329
+msgid "config file location"
+msgstr "розташування файла налаштувань"
+
+#: ../cli.py:1332
+msgid "maximum command wait time"
+msgstr "максимальний час очікування на завершення команди"
+
+#: ../cli.py:1334
+msgid "debugging output level"
+msgstr "рівень докладності діагностичних повідомлень"
+
+#: ../cli.py:1338
+msgid "show duplicates, in repos, in list/search commands"
+msgstr "показати дублікати у сховищах та командах побудови списку та пошуку"
+
+#: ../cli.py:1340
+msgid "error output level"
+msgstr "рівень докладності повідомлень про помилки"
+
+#: ../cli.py:1343
+msgid "debugging output level for rpm"
+msgstr "рівень докладності діагностичних повідомлень rpm"
+
+#: ../cli.py:1346
+msgid "quiet operation"
+msgstr "обробка без виведення повідомлень"
+
+#: ../cli.py:1348
+msgid "verbose operation"
+msgstr "докладна обробка команд"
+
+#: ../cli.py:1350
+msgid "answer yes for all questions"
+msgstr "відповісти «так» на всі питання"
+
+#: ../cli.py:1352
+msgid "show Yum version and exit"
+msgstr "показати версію Yum і завершити роботу"
+
+#: ../cli.py:1353
+msgid "set install root"
+msgstr "встановити кореневий каталог встановлення"
+
+#: ../cli.py:1357
+msgid "enable one or more repositories (wildcards allowed)"
+msgstr ""
+"увімкнути одне або декілька сховищ (можна використовувати шаблони заміни)"
+
+#: ../cli.py:1361
+msgid "disable one or more repositories (wildcards allowed)"
+msgstr ""
+"вимкнути одне або декілька сховищ (можна використовувати шаблони заміни)"
+
+#: ../cli.py:1364
+msgid "exclude package(s) by name or glob"
+msgstr "виключити пакунки за назвою або формальним виразом"
+
+#: ../cli.py:1366
+msgid "disable exclude from main, for a repo or for everything"
+msgstr "вимкнути виключення з main для сховища або на загальному рівні"
+
+#: ../cli.py:1369
+msgid "enable obsoletes processing during updates"
+msgstr "увімкнути обробку застарілих пакунків під час оновлень"
+
+#: ../cli.py:1371
+msgid "disable Yum plugins"
+msgstr "вимкнути додатки Yum"
+
+#: ../cli.py:1373
+msgid "disable gpg signature checking"
+msgstr "вимкнути перевірку підписів gpg"
+
+#: ../cli.py:1375
+msgid "disable plugins by name"
+msgstr "вимкнути додатки за назвою"
+
+#: ../cli.py:1378
+msgid "enable plugins by name"
+msgstr "увімкнути додатки за назвою"
+
+#: ../cli.py:1381
+msgid "skip packages with depsolving problems"
+msgstr "пропустити пакунки з помилками у розв’язанні залежностей"
+
+#: ../cli.py:1383
+msgid "control whether color is used"
+msgstr "визначає, чи слід використовувати розфарбовування"
+
+#: ../cli.py:1385
+msgid "set value of $releasever in yum config and repo files"
+msgstr ""
+"встановити значення $releasever у налаштуванні yum config and repo files"
+
+#: ../output.py:305
+msgid "Jan"
+msgstr "січ"
+
+#: ../output.py:305
+msgid "Feb"
+msgstr "лют"
+
+#: ../output.py:305
+msgid "Mar"
+msgstr "бер"
+
+#: ../output.py:305
+msgid "Apr"
+msgstr "кві"
+
+#: ../output.py:305
+msgid "May"
+msgstr "тра"
+
+#: ../output.py:305
+msgid "Jun"
+msgstr "чер"
+
+#: ../output.py:306
+msgid "Jul"
+msgstr "лип"
+
+#: ../output.py:306
+msgid "Aug"
+msgstr "сер"
+
+#: ../output.py:306
+msgid "Sep"
+msgstr "вер"
+
+#: ../output.py:306
+msgid "Oct"
+msgstr "жов"
+
+#: ../output.py:306
+msgid "Nov"
+msgstr "лис"
+
+#: ../output.py:306
+msgid "Dec"
+msgstr "гру"
+
+#: ../output.py:316
+msgid "Trying other mirror."
+msgstr "Спроба використання іншого дзеркала."
+
+#: ../output.py:534
+#, python-format
+msgid "Name       : %s%s%s"
+msgstr "Назва       : %s%s%s"
+
+#: ../output.py:535
+#, python-format
+msgid "Arch       : %s"
+msgstr "Архітектура: %s"
+
+#: ../output.py:537
+#, python-format
+msgid "Epoch      : %s"
+msgstr "Епоха       : %s"
+
+#: ../output.py:538
+#, python-format
+msgid "Version    : %s"
+msgstr "Версія      : %s"
+
+#: ../output.py:539
+#, python-format
+msgid "Release    : %s"
+msgstr "Випуск      : %s"
+
+#: ../output.py:540
+#, python-format
+msgid "Size       : %s"
+msgstr "Розмір      : %s"
+
+#: ../output.py:541
+#, python-format
+msgid "Repo       : %s"
+msgstr "Сховище     : %s"
+
+#: ../output.py:543
+#, python-format
+msgid "From repo  : %s"
+msgstr "Зі сховища  : %s"
+
+#: ../output.py:545
+#, python-format
+msgid "Committer  : %s"
+msgstr "Автор      : %s"
+
+#: ../output.py:546
+#, python-format
+msgid "Committime : %s"
+msgstr "Час внеску  : %s"
+
+#: ../output.py:547
+#, python-format
+msgid "Buildtime  : %s"
+msgstr "Час збирання : %s"
+
+#: ../output.py:549
+#, python-format
+msgid "Installtime: %s"
+msgstr "Встановлення: %s"
+
+#: ../output.py:550
+msgid "Summary    : "
+msgstr "Резюме      : "
+
+#: ../output.py:552
+#, python-format
+msgid "URL        : %s"
+msgstr "Адреса      : %s"
+
+#: ../output.py:553
+msgid "License    : "
+msgstr "Ліцензія    : "
+
+#: ../output.py:554
+msgid "Description: "
+msgstr "Опис        : "
+
+#: ../output.py:622
+msgid "y"
+msgstr "y"
+
+#: ../output.py:622
+msgid "yes"
+msgstr "так"
+
+#: ../output.py:623
+msgid "n"
+msgstr "n"
+
+#: ../output.py:623
+msgid "no"
+msgstr "ні"
+
+#: ../output.py:627
+msgid "Is this ok [y/N]: "
+msgstr "Виконати дію? [y/N]: "
+
+#: ../output.py:715
+#, python-format
+msgid ""
+"\n"
+"Group: %s"
+msgstr ""
+"\n"
+"Група: %s"
+
+#: ../output.py:719
+#, python-format
+msgid " Group-Id: %s"
+msgstr " Ід. групи: %s"
+
+#: ../output.py:724
+#, python-format
+msgid " Description: %s"
+msgstr " Опис: %s"
+
+#: ../output.py:726
+msgid " Mandatory Packages:"
+msgstr " Обов’язкові пакунки:"
+
+#: ../output.py:727
+msgid " Default Packages:"
+msgstr " Типові пакунки:"
+
+#: ../output.py:728
+msgid " Optional Packages:"
+msgstr " Додаткові пакунки:"
+
+#: ../output.py:729
+msgid " Conditional Packages:"
+msgstr " Залежні пакунки:"
+
+#: ../output.py:749
+#, python-format
+msgid "package: %s"
+msgstr "пакунок: %s"
+
+#: ../output.py:751
+msgid "  No dependencies for this package"
+msgstr "  Пакунок не залежить від інших пакунків"
+
+#: ../output.py:756
+#, python-format
+msgid "  dependency: %s"
+msgstr "  залежність: %s"
+
+#: ../output.py:758
+msgid "   Unsatisfied dependency"
+msgstr "   Незадоволена залежність"
+
+#: ../output.py:830
+#, python-format
+msgid "Repo        : %s"
+msgstr "Сховище     : %s"
+
+#: ../output.py:831
+msgid "Matched from:"
+msgstr "Відповідність:"
+
+#: ../output.py:840
+msgid "Description : "
+msgstr "Опис        : "
+
+#: ../output.py:843
+#, python-format
+msgid "URL         : %s"
+msgstr "Адреса      : %s"
+
+#: ../output.py:846
+#, python-format
+msgid "License     : %s"
+msgstr "Ліцензія    : %s"
+
+#: ../output.py:849
+#, python-format
+msgid "Filename    : %s"
+msgstr "Назва файла : %s"
+
+#: ../output.py:853
+msgid "Other       : "
+msgstr "Інше        : "
+
+#: ../output.py:896
+msgid "There was an error calculating total download size"
+msgstr "Під час обчислення загального обсягу звантаження сталася помилка"
+
+#: ../output.py:901
+#, python-format
+msgid "Total size: %s"
+msgstr "Загальний обсяг: %s"
+
+#: ../output.py:904
+#, python-format
+msgid "Total download size: %s"
+msgstr "Загальний обсяг звантаження: %s"
+
+#: ../output.py:908
+#, python-format
+msgid "Installed size: %s"
+msgstr "Розмір після встановлення: %s"
+
+#: ../output.py:949
+msgid "Reinstalling"
+msgstr "Перевстановлення"
+
+#: ../output.py:950
+msgid "Downgrading"
+msgstr "Зниження версії"
+
+#: ../output.py:951
+msgid "Installing for dependencies"
+msgstr "Встановлення для залежностей"
+
+#: ../output.py:952
+msgid "Updating for dependencies"
+msgstr "Оновлення для залежностей"
+
+#: ../output.py:953
+msgid "Removing for dependencies"
+msgstr "Вилучення для залежностей"
+
+#: ../output.py:960 ../output.py:1072
+msgid "Skipped (dependency problems)"
+msgstr "Пропущено (проблеми з залежностями)"
+
+#: ../output.py:983
+msgid "Package"
+msgstr "Пакунок"
+
+#: ../output.py:983
+msgid "Arch"
+msgstr "Архітектура"
+
+#: ../output.py:984
+msgid "Version"
+msgstr "Версія"
+
+#: ../output.py:984
+msgid "Repository"
+msgstr "Сховище"
+
+#: ../output.py:985
+msgid "Size"
+msgstr "Розмір"
+
+#: ../output.py:997
+#, python-format
+msgid "     replacing  %s%s%s.%s %s\n"
+msgstr "     заміна  %s%s%s.%s %s\n"
+
+#: ../output.py:1006
+#, python-format
+msgid ""
+"\n"
+"Transaction Summary\n"
+"%s\n"
+msgstr ""
+"\n"
+"Резюме операції\n"
+"%s\n"
+
+#: ../output.py:1013
+#, python-format
+msgid ""
+"Install   %5.5s Package(s)\n"
+"Upgrade   %5.5s Package(s)\n"
+msgstr ""
+"Встановлення   %5.5s пакунків\n"
+"Оновлення      %5.5s пакунків\n"
+
+#: ../output.py:1022
+#, python-format
+msgid ""
+"Remove    %5.5s Package(s)\n"
+"Reinstall %5.5s Package(s)\n"
+"Downgrade %5.5s Package(s)\n"
+msgstr ""
+"Вилучення        %5.5s пакунків\n"
+"Перевстановлення %5.5s пакунків\n"
+"Зниження версії  %5.5s пакунків\n"
+
+#: ../output.py:1066
+msgid "Removed"
+msgstr "Вилучено"
+
+#: ../output.py:1067
+msgid "Dependency Removed"
+msgstr "Вилучено залежності"
+
+#: ../output.py:1069
+msgid "Dependency Installed"
+msgstr "Встановлено залежності"
+
+#: ../output.py:1071
+msgid "Dependency Updated"
+msgstr "Оновлено залежності"
+
+#: ../output.py:1073
+msgid "Replaced"
+msgstr "Замінено"
+
+#: ../output.py:1074
+msgid "Failed"
+msgstr "Помилка"
+
+#. Delta between C-c's so we treat as exit
+#: ../output.py:1140
+msgid "two"
+msgstr "два"
+
+#. For translators: This is output like:
+#. Current download cancelled, interrupt (ctrl-c) again within two seconds
+#. to exit.
+#. Where "interupt (ctrl-c) again" and "two" are highlighted.
+#: ../output.py:1151
+#, python-format
+msgid ""
+"\n"
+" Current download cancelled, %sinterrupt (ctrl-c) again%s within %s%s%s "
+"seconds\n"
+"to exit.\n"
+msgstr ""
+"\n"
+" Поточне звантаження скасовано, %sперервіть роботу (ctrl-c) ще раз%s "
+"протягом %s%s%s секунд,\n"
+"щоб завершити операцію.\n"
+
+#: ../output.py:1162
+msgid "user interrupt"
+msgstr "перервано користувачем"
+
+#: ../output.py:1180
+msgid "Total"
+msgstr "Загалом"
+
+#: ../output.py:1202
+msgid "I"
+msgstr "I"
+
+#: ../output.py:1203
+msgid "O"
+msgstr "O"
+
+#: ../output.py:1204
+msgid "E"
+msgstr "E"
+
+#: ../output.py:1205
+msgid "R"
+msgstr "R"
+
+#: ../output.py:1206
+msgid "D"
+msgstr "D"
+
+#: ../output.py:1207
+msgid "U"
+msgstr "U"
+
+#: ../output.py:1217
+msgid "<unset>"
+msgstr "<не встановлено>"
+
+#: ../output.py:1218
+msgid "System"
+msgstr "Система"
+
+#: ../output.py:1254
+msgid "Bad transaction IDs, or package(s), given"
+msgstr "Вказано помилкові ідентифікатори операцій або пакунки"
+
+#: ../output.py:1266
+msgid "ID"
+msgstr "Ід."
+
+#: ../output.py:1267 ../output.py:1520
+msgid "Login user"
+msgstr "Користувач"
+
+#: ../output.py:1268
+msgid "Date and time"
+msgstr "Дата і час"
+
+#: ../output.py:1269 ../output.py:1522
+msgid "Action(s)"
+msgstr "Дії"
+
+#: ../output.py:1270 ../output.py:1523
+msgid "Altered"
+msgstr "Змінено"
+
+#: ../output.py:1310
+msgid "No transaction ID given"
+msgstr "Не вказано ідентифікатора операції"
+
+#: ../output.py:1336
+msgid "Bad transaction ID given"
+msgstr "Вказано помилковий ідентифікатор операції"
+
+#: ../output.py:1341
+msgid "Not found given transaction ID"
+msgstr "Не виявлено вказаного ідентифікатора операції"
+
+#: ../output.py:1349
+msgid "Found more than one transaction ID!"
+msgstr "Виявлено більше одного ідентифікатора операції!"
+
+#: ../output.py:1370
+msgid "No transaction ID, or package, given"
+msgstr "Не вказано ідентифікатора операції або назви пакунка"
+
+#: ../output.py:1396
+msgid "Transaction ID :"
+msgstr "Ід. операції   :"
+
+#: ../output.py:1398
+msgid "Begin time     :"
+msgstr "Час початку     :"
+
+#: ../output.py:1401 ../output.py:1403
+msgid "Begin rpmdb    :"
+msgstr "Початок rpmdb   :"
+
+#: ../output.py:1417
+#, python-format
+msgid "(%s seconds)"
+msgstr "(%s секунд)"
+
+#: ../output.py:1418
+msgid "End time       :"
+msgstr "Час завершення  :"
+
+#: ../output.py:1421 ../output.py:1423
+msgid "End rpmdb      :"
+msgstr "Завершення rpmdb:"
+
+#: ../output.py:1424
+msgid "User           :"
+msgstr "Користувач     :"
+
+#: ../output.py:1426 ../output.py:1428 ../output.py:1430
+msgid "Return-Code    :"
+msgstr "Повернутий код :"
+
+#: ../output.py:1426
+msgid "Aborted"
+msgstr "Перервано"
+
+#: ../output.py:1428
+msgid "Failure:"
+msgstr "Невдача:"
+
+#: ../output.py:1430
+msgid "Success"
+msgstr "Успіх"
+
+#: ../output.py:1431
+msgid "Transaction performed with:"
+msgstr "Результат виконання операції:"
+
+#: ../output.py:1444 ../output.py:1489
+msgid "Downgraded"
+msgstr "Знижено версію"
+
+#. multiple versions installed, both older and newer
+#: ../output.py:1446
+msgid "Weird"
+msgstr "Дивно"
+
+#: ../output.py:1448
+msgid "Packages Altered:"
+msgstr "Змінено пакунків:"
+
+#: ../output.py:1451
+msgid "Scriptlet output:"
+msgstr "Виведено скриптом:"
+
+#: ../output.py:1457
+msgid "Errors:"
+msgstr "Помилки:"
+
+#: ../output.py:1481 ../output.py:1482
+msgid "Install"
+msgstr "Встановити"
+
+#: ../output.py:1483
+msgid "Dep-Install"
+msgstr "Встановлення з залежностями"
+
+#: ../output.py:1485
+msgid "Obsoleting"
+msgstr "Робить застарілим"
+
+#: ../output.py:1486
+msgid "Erase"
+msgstr "Стерти"
+
+#: ../output.py:1487
+msgid "Reinstall"
+msgstr "Перевстановлення"
+
+#: ../output.py:1488
+msgid "Downgrade"
+msgstr "Понизити"
+
+#: ../output.py:1490
+msgid "Update"
+msgstr "Оновити"
+
+#: ../output.py:1521
+msgid "Time"
+msgstr "Час"
+
+#: ../output.py:1547
+msgid "Last day"
+msgstr "Протягом дня"
+
+#: ../output.py:1548
+msgid "Last week"
+msgstr "Попереднього тижня"
+
+#: ../output.py:1549
+msgid "Last 2 weeks"
+msgstr "Попередні 2 тижні"
+
+#. US default :p
+#: ../output.py:1550
+msgid "Last 3 months"
+msgstr "Попередні 3 місяці"
+
+#: ../output.py:1551
+msgid "Last 6 months"
+msgstr "Попередні 6 місяців"
+
+#: ../output.py:1552
+msgid "Last year"
+msgstr "Попередній рік"
+
+#: ../output.py:1553
+msgid "Over a year ago"
+msgstr "Понад рік тому"
+
+#: ../output.py:1585
+msgid "installed"
+msgstr "встановлення"
+
+#: ../output.py:1586
+msgid "updated"
+msgstr "оновлення"
+
+#: ../output.py:1587
+msgid "obsoleted"
+msgstr "застарілі"
+
+#: ../output.py:1588
+msgid "erased"
+msgstr "вилучення"
+
+#: ../output.py:1592
+#, python-format
+msgid "---> Package %s.%s %s:%s-%s set to be %s"
+msgstr "---> Пакунок %s.%s %s:%s-%s позначено для %s"
+
+#: ../output.py:1599
+msgid "--> Running transaction check"
+msgstr "--> Виконання перевірки операції"
+
+#: ../output.py:1604
+msgid "--> Restarting Dependency Resolution with new changes."
+msgstr "--> Перезапускається визначення залежностей з урахуванням змін."
+
+#: ../output.py:1609
+msgid "--> Finished Dependency Resolution"
+msgstr "--> Визначення залежностей завершено"
+
+#: ../output.py:1614 ../output.py:1619
+#, python-format
+msgid "--> Processing Dependency: %s for package: %s"
+msgstr "--> Обробка залежності: %s для пакунка: %s"
+
+#: ../output.py:1623
+#, python-format
+msgid "--> Unresolved Dependency: %s"
+msgstr "--> Нерозв'язана залежність: %s"
+
+#: ../output.py:1634
+#, python-format
+msgid "Package: %s"
+msgstr "Пакунок: %s"
+
+#: ../output.py:1636
+#, python-format
+msgid ""
+"\n"
+"    Requires: %s"
+msgstr ""
+"\n"
+"    Потребує: %s"
+
+#: ../output.py:1649 ../output.py:1660
+#, python-format
+msgid ""
+"\n"
+"    %s: %s (%s)"
+msgstr ""
+"\n"
+"    %s: %s (%s)"
+
+#: ../output.py:1657
+msgid "Available"
+msgstr "Наявні"
+
+#: ../output.py:1665 ../output.py:1670
+#, python-format
+msgid "--> Processing Conflict: %s conflicts %s"
+msgstr "--> Обробка конфлікту: %s конфліктів %s"
+
+#: ../output.py:1674
+msgid "--> Populating transaction set with selected packages. Please wait."
+msgstr "--> Додавання вибраних пакунків до операції. Зачекайте, будь ласка."
+
+#: ../output.py:1678
+#, python-format
+msgid "---> Downloading header for %s to pack into transaction set."
+msgstr "---> У список операцій звантажується заголовок пакунка %s."
+
+#: ../utils.py:93
+msgid "Running"
+msgstr "Виконання"
+
+#: ../utils.py:94
+msgid "Sleeping"
+msgstr "Сплю"
+
+#: ../utils.py:95
+msgid "Uninterruptible"
+msgstr "Безперервний"
+
+#: ../utils.py:96
+msgid "Zombie"
+msgstr "Зомбі"
+
+#: ../utils.py:97
+msgid "Traced/Stopped"
+msgstr "З трасуванням/зупинкою"
+
+#: ../utils.py:98 ../yumcommands.py:917
+msgid "Unknown"
+msgstr "Невідомо"
+
+#: ../utils.py:109
+msgid "  The other application is: PackageKit"
+msgstr "  Сторонньою програмою є: PackageKit"
+
+#: ../utils.py:111
+#, python-format
+msgid "  The other application is: %s"
+msgstr "  Сторонньою програмою є: %s"
+
+#: ../utils.py:114
+#, python-format
+msgid "    Memory : %5s RSS (%5sB VSZ)"
+msgstr "    Пм’ять : %5s RSS (%5sБ VSZ)"
+
+#: ../utils.py:119
+#, python-format
+msgid "    Started: %s - %s ago"
+msgstr "    Почато: %s - %s тому"
+
+#: ../utils.py:121
+#, python-format
+msgid "    State  : %s, pid: %d"
+msgstr "    Стан   : %s, PID: %d"
+
+#: ../utils.py:199
+#, python-format
+msgid "PluginExit Error: %s"
+msgstr "Помилка PluginExit: %s"
+
+#: ../utils.py:202
+#, python-format
+msgid "Yum Error: %s"
+msgstr "Помилка Yum: %s"
+
+#: ../utils.py:235 ../yummain.py:42
+msgid ""
+"\n"
+"\n"
+"Exiting on user cancel"
+msgstr ""
+"\n"
+"\n"
+"Завершення роботи на запит користувача"
+
+#: ../utils.py:241 ../yummain.py:48
+msgid ""
+"\n"
+"\n"
+"Exiting on Broken Pipe"
+msgstr ""
+"\n"
+"\n"
+"Завершення роботи через розрив зв’язку"
+
+#: ../utils.py:243 ../yummain.py:50
+#, python-format
+msgid ""
+"\n"
+"\n"
+"%s"
+msgstr ""
+"\n"
+"\n"
+"%s"
+
+#: ../utils.py:282 ../yummain.py:211
+msgid "Complete!"
+msgstr "Завершено!"
+
+#: ../yumcommands.py:43
+msgid "You need to be root to perform this command."
+msgstr ""
+"Для виконання цієї команди вам слід набути прав доступу адміністративного "
+"користувача."
+
+#: ../yumcommands.py:50
+msgid ""
+"\n"
+"You have enabled checking of packages via GPG keys. This is a good thing. \n"
+"However, you do not have any GPG public keys installed. You need to "
+"download\n"
+"the keys for packages you wish to install and install them.\n"
+"You can do that by running the command:\n"
+"    rpm --import public.gpg.key\n"
+"\n"
+"\n"
+"Alternatively you can specify the url to the key you would like to use\n"
+"for a repository in the 'gpgkey' option in a repository section and yum \n"
+"will install it for you.\n"
+"\n"
+"For more information contact your distribution or package provider.\n"
+msgstr ""
+"\n"
+"Вами було увімкнено перевірку пакунків за допомогою ключів GPG. Це "
+"правильний крок. \n"
+"Але у вашій системі не встановлено жодного відкритого ключа GPG. Вам слід "
+"звантажити\n"
+"ключі до пакунків, які ви бажаєте встановити і встановити ці ключі.\n"
+"Виконати встановлення можна за допомогою команди:\n"
+"    rpm --import public.gpg.key\n"
+"\n"
+"\n"
+"Крім того, ви можете вказати адресу URL ключа, яким бажаєте скористатися\n"
+"для сховища за допомогою параметра «gpgkey» у розділі налаштувань сховища, "
+"yum \n"
+"встановить потрібні ключі автоматично.\n"
+"\n"
+"Докладніші відомості може бути отримано з довідки до вашого дистрибутива або "
+"від\n"
+"постачальника пакунків.\n"
+
+#: ../yumcommands.py:70
+#, python-format
+msgid "Error: Need to pass a list of pkgs to %s"
+msgstr "Помилка: %s слід передати список пакунків"
+
+#: ../yumcommands.py:76
+msgid "Error: Need an item to match"
+msgstr "Помилка: слід вказати ключ для встановлення відповідності"
+
+#: ../yumcommands.py:82
+msgid "Error: Need a group or list of groups"
+msgstr "Помилка: слід вказати групу або список груп"
+
+#: ../yumcommands.py:91
+#, python-format
+msgid "Error: clean requires an option: %s"
+msgstr "Помилка: для виконання clean слід вказати %s"
+
+#: ../yumcommands.py:96
+#, python-format
+msgid "Error: invalid clean argument: %r"
+msgstr "Помилка: некоректний аргумент clean: %r"
+
+#: ../yumcommands.py:109
+msgid "No argument to shell"
+msgstr "Не вказано аргумент shell"
+
+#: ../yumcommands.py:111
+#, python-format
+msgid "Filename passed to shell: %s"
+msgstr "shell передано назву файла: %s"
+
+#: ../yumcommands.py:115
+#, python-format
+msgid "File %s given as argument to shell does not exist."
+msgstr "Файла %s, переданого як аргумент параметра shell, не знайдено."
+
+#: ../yumcommands.py:121
+msgid "Error: more than one file given as argument to shell."
+msgstr "Помилка: shell передано як аргументи декілька файлів."
+
+#: ../yumcommands.py:170
+msgid "PACKAGE..."
+msgstr "ПАКУНОК…"
+
+#: ../yumcommands.py:173
+msgid "Install a package or packages on your system"
+msgstr "Встановлення пакунка або пакунків у вашій системі"
+
+#: ../yumcommands.py:181
+msgid "Setting up Install Process"
+msgstr "Налаштування процесу встановлення"
+
+#: ../yumcommands.py:192
+msgid "[PACKAGE...]"
+msgstr "[ПАКУНОК…]"
+
+#: ../yumcommands.py:195
+msgid "Update a package or packages on your system"
+msgstr "Оновлення пакунків вашої системи"
+
+#: ../yumcommands.py:202
+msgid "Setting up Update Process"
+msgstr "Налаштування процесу оновлення"
+
+#: ../yumcommands.py:244
+msgid "Display details about a package or group of packages"
+msgstr "Показати подробиці щодо пакунка або групи пакунків"
+
+#: ../yumcommands.py:293
+msgid "Installed Packages"
+msgstr "Встановлені пакунки"
+
+#: ../yumcommands.py:301
+msgid "Available Packages"
+msgstr "Доступних пакунків"
+
+#: ../yumcommands.py:305
+msgid "Extra Packages"
+msgstr "Зайвих пакунків"
+
+#: ../yumcommands.py:309
+msgid "Updated Packages"
+msgstr "Оновлених пакунків"
+
+#. This only happens in verbose mode
+#: ../yumcommands.py:317 ../yumcommands.py:324 ../yumcommands.py:601
+msgid "Obsoleting Packages"
+msgstr "Застарілих пакунків"
+
+#: ../yumcommands.py:326
+msgid "Recently Added Packages"
+msgstr "Останні додані пакунки"
+
+#: ../yumcommands.py:333
+msgid "No matching Packages to list"
+msgstr "У списку не виявлено відповідних пакунків"
+
+#: ../yumcommands.py:347
+msgid "List a package or groups of packages"
+msgstr "Список пакунків або груп пакунків"
+
+#: ../yumcommands.py:359
+msgid "Remove a package or packages from your system"
+msgstr "Вилучення пакунка або пакунків з вашої системі"
+
+#: ../yumcommands.py:366
+msgid "Setting up Remove Process"
+msgstr "Налаштування процесу вилучення"
+
+#: ../yumcommands.py:380
+msgid "Setting up Group Process"
+msgstr "Налаштування обробки груп"
+
+#: ../yumcommands.py:386
+msgid "No Groups on which to run command"
+msgstr "Не виявлено груп, над якими має бути виконано команду"
+
+#: ../yumcommands.py:399
+msgid "List available package groups"
+msgstr "Список можливих груп пакунків"
+
+#: ../yumcommands.py:416
+msgid "Install the packages in a group on your system"
+msgstr "Встановлення пакунків групи"
+
+#: ../yumcommands.py:438
+msgid "Remove the packages in a group from your system"
+msgstr "Вилучення пакунків групи"
+
+#: ../yumcommands.py:465
+msgid "Display details about a package group"
+msgstr "Показ подробиць щодо групи пакунків"
+
+#: ../yumcommands.py:489
+msgid "Generate the metadata cache"
+msgstr "Створення кешу метаданих"
+
+#: ../yumcommands.py:495
+msgid "Making cache files for all metadata files."
+msgstr "Створення файлів кешу для всіх файлів метаданих."
+
+#: ../yumcommands.py:496
+msgid "This may take a while depending on the speed of this computer"
+msgstr ""
+"Процедура може тривати досить довго, тривалість залежить від потужності "
+"комп’ютера."
+
+#: ../yumcommands.py:517
+msgid "Metadata Cache Created"
+msgstr "Створено кеш метаданих"
+
+#: ../yumcommands.py:531
+msgid "Remove cached data"
+msgstr "Вилучення кешованих даних"
+
+#: ../yumcommands.py:551
+msgid "Find what package provides the given value"
+msgstr "Пошук пакунка за вказаним ключем"
+
+#: ../yumcommands.py:571
+msgid "Check for available package updates"
+msgstr "Перевірка доступності оновлень пакунків"
+
+#: ../yumcommands.py:621
+msgid "Search package details for the given string"
+msgstr "Пошук подробиць щодо пакунка за вказаним рядком"
+
+#: ../yumcommands.py:627
+msgid "Searching Packages: "
+msgstr "Пошук пакунків: "
+
+#: ../yumcommands.py:644
+msgid "Update packages taking obsoletes into account"
+msgstr "Оновлення пакунків з врахуванням застарівання пакунків"
+
+#: ../yumcommands.py:652
+msgid "Setting up Upgrade Process"
+msgstr "Налаштування процесу оновлення"
+
+#: ../yumcommands.py:666
+msgid "Install a local RPM"
+msgstr "Встановлення локального пакунка RPM"
+
+#: ../yumcommands.py:674
+msgid "Setting up Local Package Process"
+msgstr "Налаштування обробки локального пакунка"
+
+#: ../yumcommands.py:693
+msgid "Determine which package provides the given dependency"
+msgstr "Визначення пакунка, що містить вказану залежність"
+
+#: ../yumcommands.py:696
+msgid "Searching Packages for Dependency:"
+msgstr "Пошук пакунків для задоволення залежності:"
+
+#: ../yumcommands.py:710
+msgid "Run an interactive yum shell"
+msgstr "Запуск інтерактивної оболонки yum"
+
+#: ../yumcommands.py:716
+msgid "Setting up Yum Shell"
+msgstr "Налаштування оболонки Yum"
+
+#: ../yumcommands.py:734
+msgid "List a package's dependencies"
+msgstr "Показ списку залежностей пакунків"
+
+#: ../yumcommands.py:740
+msgid "Finding dependencies: "
+msgstr "Пошук залежностей: "
+
+#: ../yumcommands.py:756
+msgid "Display the configured software repositories"
+msgstr "Показ списку увімкнених сховищ програмного забезпечення"
+
+#: ../yumcommands.py:822 ../yumcommands.py:823
+msgid "enabled"
+msgstr "увімкнено"
+
+#: ../yumcommands.py:849 ../yumcommands.py:850
+msgid "disabled"
+msgstr "вимкнено"
+
+#: ../yumcommands.py:866
+msgid "Repo-id      : "
+msgstr "Ід. сховища   : "
+
+#: ../yumcommands.py:867
+msgid "Repo-name    : "
+msgstr "Назва сховища : "
+
+#: ../yumcommands.py:870
+msgid "Repo-status  : "
+msgstr "Стан сховища  : "
+
+#: ../yumcommands.py:873
+msgid "Repo-revision: "
+msgstr "Версія сховища: "
+
+#: ../yumcommands.py:877
+msgid "Repo-tags    : "
+msgstr "Мітки сховища : "
+
+#: ../yumcommands.py:883
+msgid "Repo-distro-tags: "
+msgstr "Мітки дистрибутива сховища: "
+
+#: ../yumcommands.py:888
+msgid "Repo-updated : "
+msgstr "Оновлення сховища: "
+
+#: ../yumcommands.py:890
+msgid "Repo-pkgs    : "
+msgstr "Пакунки сховища: "
+
+#: ../yumcommands.py:891
+msgid "Repo-size    : "
+msgstr "Розмір сховища: "
+
+#: ../yumcommands.py:898
+msgid "Repo-baseurl : "
+msgstr "Адреса сховища: "
+
+#: ../yumcommands.py:906
+msgid "Repo-metalink: "
+msgstr "Метапосилання сховища: "
+
+#: ../yumcommands.py:910
+msgid "  Updated    : "
+msgstr "  Оновлено   : "
+
+#: ../yumcommands.py:913
+msgid "Repo-mirrors : "
+msgstr "Дзеркала сховищ: "
+
+#: ../yumcommands.py:923
+#, python-format
+msgid "Never (last: %s)"
+msgstr "Ніколи (востаннє: %s)"
+
+#: ../yumcommands.py:925
+#, python-format
+msgid "Instant (last: %s)"
+msgstr "Негайно (лишилося: %s)"
+
+#: ../yumcommands.py:928
+#, python-format
+msgid "%s second(s) (last: %s)"
+msgstr "%s секунд (лишилося: %s)"
+
+#: ../yumcommands.py:930
+msgid "Repo-expire  : "
+msgstr "Строк дії сховища: "
+
+#: ../yumcommands.py:933
+msgid "Repo-exclude : "
+msgstr "Виключення сховища: "
+
+#: ../yumcommands.py:937
+msgid "Repo-include : "
+msgstr "Включення сховища: "
+
+#: ../yumcommands.py:941
+msgid "Repo-excluded: "
+msgstr "Виключені сховища: "
+
+#. Work out the first (id) and last (enabled/disalbed/count),
+#. then chop the middle (name)...
+#: ../yumcommands.py:951 ../yumcommands.py:980
+msgid "repo id"
+msgstr "ід. сховища"
+
+#: ../yumcommands.py:968 ../yumcommands.py:969 ../yumcommands.py:987
+msgid "status"
+msgstr "стан"
+
+#: ../yumcommands.py:981
+msgid "repo name"
+msgstr "назва сховища"
+
+#: ../yumcommands.py:1018
+msgid "Display a helpful usage message"
+msgstr "Показати корисну підказку щодо використання"
+
+#: ../yumcommands.py:1052
+#, python-format
+msgid "No help available for %s"
+msgstr "Довідки щодо %s не виявлено"
+
+#: ../yumcommands.py:1057
+msgid ""
+"\n"
+"\n"
+"aliases: "
+msgstr ""
+"\n"
+"\n"
+"інші назви: "
+
+#: ../yumcommands.py:1059
+msgid ""
+"\n"
+"\n"
+"alias: "
+msgstr ""
+"\n"
+"\n"
+"інша назва: "
+
+#: ../yumcommands.py:1087
+msgid "Setting up Reinstall Process"
+msgstr "Налаштування процесу перевстановлення"
+
+#: ../yumcommands.py:1095
+msgid "reinstall a package"
+msgstr "перевстановлення пакунка"
+
+#: ../yumcommands.py:1113
+msgid "Setting up Downgrade Process"
+msgstr "Налаштування процесу зниження версії"
+
+#: ../yumcommands.py:1120
+msgid "downgrade a package"
+msgstr "зниження версії пакунка"
+
+#: ../yumcommands.py:1134
+msgid "Display a version for the machine and/or available repos."
+msgstr "Показ версії для вашої архітектури і/або списку доступних сховищ."
+
+#: ../yumcommands.py:1173
+msgid " Yum version groups:"
+msgstr " Групи версій Yum:"
+
+#: ../yumcommands.py:1183
+msgid " Group   :"
+msgstr " Група   :"
+
+#: ../yumcommands.py:1184
+msgid " Packages:"
+msgstr " Пакунки:"
+
+#: ../yumcommands.py:1213
+msgid "Installed:"
+msgstr "Встановлено:"
+
+#: ../yumcommands.py:1218
+msgid "Group-Installed:"
+msgstr "Встановлені групи:"
+
+#: ../yumcommands.py:1227
+msgid "Available:"
+msgstr "Доступні:"
+
+#: ../yumcommands.py:1233
+msgid "Group-Available:"
+msgstr "Доступні групи:"
+
+#: ../yumcommands.py:1272
+msgid "Display, or use, the transaction history"
+msgstr "Показ або використання журналу операцій"
+
+#: ../yumcommands.py:1300
+#, python-format
+msgid "Invalid history sub-command, use: %s."
+msgstr "Некоректна підкоманда журналу, скористайтеся: %s."
+
+#: ../yumcommands.py:1345
+msgid "Check for problems in the rpmdb"
+msgstr "Пошук проблем у rpmdb"
+
+#: ../yummain.py:102
+msgid ""
+"Another app is currently holding the yum lock; waiting for it to exit..."
+msgstr ""
+"Зараз yum блокує стороння програма. Зачекаємо на завершення її роботи..."
+
+#: ../yummain.py:130 ../yummain.py:169
+#, python-format
+msgid "Error: %s"
+msgstr "Помилка: %s"
+
+#: ../yummain.py:140 ../yummain.py:182
+#, python-format
+msgid "Unknown Error(s): Exit Code: %d:"
+msgstr "Невідомі помилки: код виходу: %d:"
+
+#. Depsolve stage
+#: ../yummain.py:147
+msgid "Resolving Dependencies"
+msgstr "Розв’язання залежностей"
+
+#: ../yummain.py:173
+msgid " You could try using --skip-broken to work around the problem"
+msgstr " Щоб обійти проблему, спробуйте скористатися параметром --skip-broken"
+
+#: ../yummain.py:175 ../yummain.py:208
+msgid " You could try running: rpm -Va --nofiles --nodigest"
+msgstr " Спробуйте віддати команду: rpm -Va --nofiles --nodigest"
+
+#: ../yummain.py:188
+msgid ""
+"\n"
+"Dependencies Resolved"
+msgstr ""
+"\n"
+"Залежності розв’язано"
+
+#: ../yummain.py:265
+msgid ""
+"\n"
+"\n"
+"Exiting on user cancel."
+msgstr ""
+"\n"
+"\n"
+"Завершення роботи на запит користувача."
+
+#: ../yum/depsolve.py:82
+msgid "doTsSetup() will go away in a future version of Yum.\n"
+msgstr "doTsSetup() буде усунуто у майбутніх версіях Yum.\n"
+
+#: ../yum/depsolve.py:97
+msgid "Setting up TransactionSets before config class is up"
+msgstr "Налаштування наборів операцій до включення класу налаштувань"
+
+#: ../yum/depsolve.py:148
+#, python-format
+msgid "Invalid tsflag in config file: %s"
+msgstr "Некоректне значення tsflag у файлі налаштувань: %s"
+
+#: ../yum/depsolve.py:159
+#, python-format
+msgid "Searching pkgSack for dep: %s"
+msgstr "Пошук pkgSack для залежності: %s"
+
+#: ../yum/depsolve.py:175
+#, python-format
+msgid "Potential match for %s from %s"
+msgstr "Потенційний відповідник %s з %s"
+
+#: ../yum/depsolve.py:183
+#, python-format
+msgid "Matched %s to require for %s"
+msgstr "%s відповідає потрібному для %s"
+
+#: ../yum/depsolve.py:225
+#, python-format
+msgid "Member: %s"
+msgstr "Частина: %s"
+
+#: ../yum/depsolve.py:239 ../yum/depsolve.py:754
+#, python-format
+msgid "%s converted to install"
+msgstr "%s перетворено для встановлення"
+
+#: ../yum/depsolve.py:246
+#, python-format
+msgid "Adding Package %s in mode %s"
+msgstr "Додавання пакунка %s у режимі %s"
+
+#: ../yum/depsolve.py:256
+#, python-format
+msgid "Removing Package %s"
+msgstr "Вилучення пакунка %s"
+
+#: ../yum/depsolve.py:278
+#, python-format
+msgid "%s requires: %s"
+msgstr "%s потребує: %s"
+
+#: ../yum/depsolve.py:319
+#, python-format
+msgid "%s requires %s"
+msgstr "%s потребує %s"
+
+#: ../yum/depsolve.py:346
+msgid "Needed Require has already been looked up, cheating"
+msgstr "Потрібний пакунок вже знайдено, обхідний маневр"
+
+#: ../yum/depsolve.py:356
+#, python-format
+msgid "Needed Require is not a package name. Looking up: %s"
+msgstr "Потрібна залежність задана не яка назва пакунка. Шукаємо: %s"
+
+#: ../yum/depsolve.py:363
+#, python-format
+msgid "Potential Provider: %s"
+msgstr "Можливе джерело залежності: %s"
+
+#: ../yum/depsolve.py:386
+#, python-format
+msgid "Mode is %s for provider of %s: %s"
+msgstr "Режим %s для надання %s: %s"
+
+#: ../yum/depsolve.py:390
+#, python-format
+msgid "Mode for pkg providing %s: %s"
+msgstr "Режим надання пакунка %s: %s"
+
+#: ../yum/depsolve.py:394
+#, python-format
+msgid "TSINFO: %s package requiring %s marked as erase"
+msgstr "TSINFO: пакунок %s, потрібний для %s, позначено для вилучення"
+
+#: ../yum/depsolve.py:407
+#, python-format
+msgid "TSINFO: Obsoleting %s with %s to resolve dep."
+msgstr ""
+"TSINFO: %s стає застарілим після встановлення %s для розв’язання залежностей."
+
+#: ../yum/depsolve.py:410
+#, python-format
+msgid "TSINFO: Updating %s to resolve dep."
+msgstr "TSINFO: оновлення %s для розв’язання залежностей."
+
+#: ../yum/depsolve.py:418
+#, python-format
+msgid "Cannot find an update path for dep for: %s"
+msgstr "Не вдалося знайти шлях оновлення для залежності %s"
+
+#: ../yum/depsolve.py:449
+#, python-format
+msgid "Quick matched %s to require for %s"
+msgstr "Встановлено швидку відповідність %s пакунку потрібному для пакунка %s"
+
+#. is it already installed?
+#: ../yum/depsolve.py:491
+#, python-format
+msgid "%s is in providing packages but it is already installed, removing."
+msgstr ""
+"%s належить до списку супутніх пакунків, його вже встановлено, пропускаємо."
+
+#: ../yum/depsolve.py:507
+#, python-format
+msgid "Potential resolving package %s has newer instance in ts."
+msgstr "Потенційний пакунок розв’язання %s має новішу версію у ts."
+
+#: ../yum/depsolve.py:518
+#, python-format
+msgid "Potential resolving package %s has newer instance installed."
+msgstr "Встановлено новішу версію потенційного пакунка розв’язання %s."
+
+#: ../yum/depsolve.py:536
+#, python-format
+msgid "%s already in ts, skipping this one"
+msgstr "%s вже перебуває у списку, пропускаємо його"
+
+#: ../yum/depsolve.py:578
+#, python-format
+msgid "TSINFO: Marking %s as update for %s"
+msgstr "TSINFO: позначення %s як оновлення для %s"
+
+#: ../yum/depsolve.py:586
+#, python-format
+msgid "TSINFO: Marking %s as install for %s"
+msgstr "TSINFO: позначення %s як такий, який слід встановити для %s"
+
+#: ../yum/depsolve.py:690 ../yum/depsolve.py:781
+msgid "Success - empty transaction"
+msgstr "Успіх — порожня операція"
+
+#: ../yum/depsolve.py:729 ../yum/depsolve.py:744
+msgid "Restarting Loop"
+msgstr "Перезапуск циклу"
+
+#: ../yum/depsolve.py:760
+msgid "Dependency Process ending"
+msgstr "Завершення процесу розв’язання залежностей"
+
+#: ../yum/depsolve.py:774
+#, python-format
+msgid "%s from %s has depsolving problems"
+msgstr "У %s з %s виникли проблеми з розв’язанням залежностей"
+
+#: ../yum/depsolve.py:782
+msgid "Success - deps resolved"
+msgstr "Успіх — залежності розв’язано"
+
+#: ../yum/depsolve.py:796
+#, python-format
+msgid "Checking deps for %s"
+msgstr "Перевірка залежностей для %s"
+
+#: ../yum/depsolve.py:874
+#, python-format
+msgid "looking for %s as a requirement of %s"
+msgstr "пошук %s, потрібного для %s"
+
+#: ../yum/depsolve.py:1090
+#, python-format
+msgid "Running compare_providers() for %s"
+msgstr "Виконання compare_providers() для %s"
+
+#: ../yum/depsolve.py:1117 ../yum/depsolve.py:1123
+#, python-format
+msgid "better arch in po %s"
+msgstr "краща архітектура у po %s"
+
+#: ../yum/depsolve.py:1218
+#, python-format
+msgid "%s obsoletes %s"
+msgstr "%s робить застарілим %s"
+
+#: ../yum/depsolve.py:1230
+#, python-format
+msgid ""
+"archdist compared %s to %s on %s\n"
+"  Winner: %s"
+msgstr ""
+"archdist порівняно %s з %s у %s\n"
+"  Кращий варіант: %s"
+
+#: ../yum/depsolve.py:1237
+#, python-format
+msgid "common sourcerpm %s and %s"
+msgstr "загальний sourcerpm %s і %s"
+
+#: ../yum/depsolve.py:1241
+#, python-format
+msgid "base package %s is installed for %s"
+msgstr "базовий пакунок %s встановлено для %s"
+
+#: ../yum/depsolve.py:1247
+#, python-format
+msgid "common prefix of %s between %s and %s"
+msgstr "загальний префікс %s для %s і %s"
+
+#: ../yum/depsolve.py:1256
+#, python-format
+msgid "Best Order: %s"
+msgstr "Найкращий порядок: %s"
+
+#: ../yum/__init__.py:192
+msgid "doConfigSetup() will go away in a future version of Yum.\n"
+msgstr "doConfigSetup() буде усунуто у майбутніх версіях Yum.\n"
+
+#: ../yum/__init__.py:424
+#, python-format
+msgid "Repository %r is missing name in configuration, using id"
+msgstr ""
+"Для сховища %r у налаштуваннях не вказано назви, використовуємо ідентифікатор"
+
+#: ../yum/__init__.py:462
+msgid "plugins already initialised"
+msgstr "додатки вже ініціалізовано"
+
+#: ../yum/__init__.py:469
+msgid "doRpmDBSetup() will go away in a future version of Yum.\n"
+msgstr "doRpmDBSetup() буде усунуто у наступних версіях Yum.\n"
+
+#: ../yum/__init__.py:480
+msgid "Reading Local RPMDB"
+msgstr "Читання локальної RPMDB"
+
+#: ../yum/__init__.py:504
+msgid "doRepoSetup() will go away in a future version of Yum.\n"
+msgstr "doRepoSetup() буде усунуто у майбутніх версіях Yum.\n"
+
+#: ../yum/__init__.py:524
+msgid "doSackSetup() will go away in a future version of Yum.\n"
+msgstr "doSackSetup() буде усунуто у майбутніх версіях Yum.\n"
+
+#: ../yum/__init__.py:554
+msgid "Setting up Package Sacks"
+msgstr "Налаштування наборів пакунків"
+
+#: ../yum/__init__.py:599
+#, python-format
+msgid "repo object for repo %s lacks a _resetSack method\n"
+msgstr "Об’єкт сховища %s не має _resetSack method,\n"
+
+#: ../yum/__init__.py:600
+msgid "therefore this repo cannot be reset.\n"
+msgstr "тому параметри цього сховища не може бути відновлено до початкових.\n"
+
+#: ../yum/__init__.py:605
+msgid "doUpdateSetup() will go away in a future version of Yum.\n"
+msgstr "doUpdateSetup() буде усунуто у майбутніх версіях Yum.\n"
+
+#: ../yum/__init__.py:617
+msgid "Building updates object"
+msgstr "Побудова об’єкта оновлення"
+
+#: ../yum/__init__.py:652
+msgid "doGroupSetup() will go away in a future version of Yum.\n"
+msgstr "doGroupSetup() буде усунуто у майбутніх версіях Yum.\n"
+
+#: ../yum/__init__.py:677
+msgid "Getting group metadata"
+msgstr "Отримання метаданих групи"
+
+#: ../yum/__init__.py:703
+#, python-format
+msgid "Adding group file from repository: %s"
+msgstr "Додавання файла групи зі сховища: %s"
+
+#: ../yum/__init__.py:712
+#, python-format
+msgid "Failed to add groups file for repository: %s - %s"
+msgstr "Не вдалося додати файл груп зі сховища: %s — %s"
+
+#: ../yum/__init__.py:718
+msgid "No Groups Available in any repository"
+msgstr "У жодному сховищі немає доступних груп"
+
+#: ../yum/__init__.py:730
+msgid "Getting pkgtags metadata"
+msgstr "Отримання метаданих міток пакунків"
+
+#: ../yum/__init__.py:740
+#, python-format
+msgid "Adding tags from repository: %s"
+msgstr "Додавання міток зі сховища: %s"
+
+#: ../yum/__init__.py:749
+#, python-format
+msgid "Failed to add Pkg Tags for repository: %s - %s"
+msgstr "Не вдалося додати мітки пакунків для сховища: %s — %s"
+
+#: ../yum/__init__.py:827
+msgid "Importing additional filelist information"
+msgstr "Імпортування додаткових відомостей списку файлів"
+
+#: ../yum/__init__.py:841
+#, python-format
+msgid "The program %s%s%s is found in the yum-utils package."
+msgstr "У пакунку yum-utils виявлено програму %s%s%s."
+
+#: ../yum/__init__.py:849
+msgid ""
+"There are unfinished transactions remaining. You might consider running yum-"
+"complete-transaction first to finish them."
+msgstr ""
+"Залишилися незавершені операції. Для їх завершення вам слід спочатку "
+"запустити yum-complete-transaction."
+
+#. Kind of hacky
+#: ../yum/__init__.py:922
+#, python-format
+msgid "Skip-broken round %i"
+msgstr "Цикл пропуску пошкоджених %i"
+
+#: ../yum/__init__.py:975
+#, python-format
+msgid "Skip-broken took %i rounds "
+msgstr "На усування пропущених і пошкоджених пакунків витрачено %i циклів "
+
+#: ../yum/__init__.py:976
+msgid ""
+"\n"
+"Packages skipped because of dependency problems:"
+msgstr ""
+"\n"
+"Пакунки, пропущені через проблеми з залежностями:"
+
+#: ../yum/__init__.py:980
+#, python-format
+msgid "    %s from %s"
+msgstr "    %s з %s"
+
+#: ../yum/__init__.py:1121
+msgid "Warning: RPMDB altered outside of yum."
+msgstr "Попередження: RPMDB змінено поза межами yum."
+
+#: ../yum/__init__.py:1126
+msgid "missing requires"
+msgstr "не має потрібних"
+
+#: ../yum/__init__.py:1127
+msgid "installed conflict"
+msgstr "конфлікт встановлення"
+
+#: ../yum/__init__.py:1180
+msgid ""
+"Warning: scriptlet or other non-fatal errors occurred during transaction."
+msgstr ""
+"Попередження: під час виконання операції сталися помилки виконання скриптів "
+"та інші некритичні помилки."
+
+#: ../yum/__init__.py:1198
+#, python-format
+msgid "Failed to remove transaction file %s"
+msgstr "Не вдалося вилучити файл операції %s"
+
+#. maybe a file log here, too
+#. but raising an exception is not going to do any good
+#: ../yum/__init__.py:1227
+#, python-format
+msgid "%s was supposed to be installed but is not!"
+msgstr "%s мало бути встановлено, але цю дію не було виконано!"
+
+#. maybe a file log here, too
+#. but raising an exception is not going to do any good
+#: ../yum/__init__.py:1266
+#, python-format
+msgid "%s was supposed to be removed but is not!"
+msgstr "%s мало бути вилучено, але цього не сталося!"
+
+#. Whoa. What the heck happened?
+#: ../yum/__init__.py:1386
+#, python-format
+msgid "Unable to check if PID %s is active"
+msgstr "Не вдалося перевірити, чи є активним PID %s"
+
+#. Another copy seems to be running.
+#: ../yum/__init__.py:1390
+#, python-format
+msgid "Existing lock %s: another copy is running as pid %s."
+msgstr "Блокування %s: запущено іншу копію з PID %s."
+
+#. Whoa. What the heck happened?
+#: ../yum/__init__.py:1425
+#, python-format
+msgid "Could not create lock at %s: %s "
+msgstr "Не вдалося створити блокування %s: %s "
+
+#: ../yum/__init__.py:1470
+msgid ""
+"Package does not match intended download. Suggestion: run yum clean metadata"
+msgstr ""
+"Пакунок не відповідає тому, який програма має намір звантажити. Пропозиція: "
+"віддайте команду yum clean metadata"
+
+#: ../yum/__init__.py:1486
+msgid "Could not perform checksum"
+msgstr "Не вдалося перевірити контрольну суму"
+
+#: ../yum/__init__.py:1489
+msgid "Package does not match checksum"
+msgstr "Контрольна сума пакунка не збігається з еталонною"
+
+#: ../yum/__init__.py:1531
+#, python-format
+msgid "package fails checksum but caching is enabled for %s"
+msgstr "контрольна сума пакунка не збігається, кешування для %s увімкнено"
+
+#: ../yum/__init__.py:1534 ../yum/__init__.py:1563
+#, python-format
+msgid "using local copy of %s"
+msgstr "використано локальну копію %s"
+
+#: ../yum/__init__.py:1575
+#, python-format
+msgid ""
+"Insufficient space in download directory %s\n"
+"    * free   %s\n"
+"    * needed %s"
+msgstr ""
+"Недостатньо місця у каталозі для звантажень %s\n"
+"    * вільно   %s\n"
+"    * потрібно %s"
+
+#: ../yum/__init__.py:1624
+msgid "Header is not complete."
+msgstr "Заголовок не завершено."
+
+#: ../yum/__init__.py:1661
+#, python-format
+msgid ""
+"Header not in local cache and caching-only mode enabled. Cannot download %s"
+msgstr ""
+"Заголовка немає у локальному кеші, увімкнено режим «лише кешування». Не "
+"вдалося звантажити %s"
+
+#: ../yum/__init__.py:1716
+#, python-format
+msgid "Public key for %s is not installed"
+msgstr "Відкритий ключ для %s не встановлено"
+
+#: ../yum/__init__.py:1720
+#, python-format
+msgid "Problem opening package %s"
+msgstr "Проблеми з відкриттям пакунка %s"
+
+#: ../yum/__init__.py:1728
+#, python-format
+msgid "Public key for %s is not trusted"
+msgstr "Відкритий ключ %s не є надійним"
+
+#: ../yum/__init__.py:1732
+#, python-format
+msgid "Package %s is not signed"
+msgstr "Пакунок %s не підписано"
+
+#: ../yum/__init__.py:1770
+#, python-format
+msgid "Cannot remove %s"
+msgstr "Не вдалося вилучити %s"
+
+#: ../yum/__init__.py:1774
+#, python-format
+msgid "%s removed"
+msgstr "%s вилучено"
+
+#: ../yum/__init__.py:1820
+#, python-format
+msgid "Cannot remove %s file %s"
+msgstr "Не вдалося вилучити файл %s, %s"
+
+#: ../yum/__init__.py:1824
+#, python-format
+msgid "%s file %s removed"
+msgstr "Файл %s, %s, вилучено"
+
+#: ../yum/__init__.py:1826
+#, python-format
+msgid "%d %s files removed"
+msgstr "Вилучено %d файлів %s"
+
+#: ../yum/__init__.py:1895
+#, python-format
+msgid "More than one identical match in sack for %s"
+msgstr "У наборі для %s знайдено декілька ідентичних відповідників"
+
+#: ../yum/__init__.py:1901
+#, python-format
+msgid "Nothing matches %s.%s %s:%s-%s from update"
+msgstr "Немає відповідників %s.%s %s:%s-%s з оновлення"
+
+#: ../yum/__init__.py:2180
+msgid ""
+"searchPackages() will go away in a future version of "
+"Yum.                      Use searchGenerator() instead. \n"
+msgstr ""
+"searchPackages() буде усунуто у майбутніх версіях Yum.                      "
+"Використовуйте краще searchGenerator(). \n"
+
+#: ../yum/__init__.py:2219
+#, python-format
+msgid "Searching %d packages"
+msgstr "Пошук %d пакунків"
+
+#: ../yum/__init__.py:2223
+#, python-format
+msgid "searching package %s"
+msgstr "пошук пакунка %s"
+
+#: ../yum/__init__.py:2235
+msgid "searching in file entries"
+msgstr "пошук серед файлів"
+
+#: ../yum/__init__.py:2242
+msgid "searching in provides entries"
+msgstr "пошук у супутніх записах"
+
+#: ../yum/__init__.py:2275
+#, python-format
+msgid "Provides-match: %s"
+msgstr "Відповідність встановленому: %s"
+
+#: ../yum/__init__.py:2324
+msgid "No group data available for configured repositories"
+msgstr "Для налаштованих сховищ дані груп недоступні"
+
+#: ../yum/__init__.py:2355 ../yum/__init__.py:2374 ../yum/__init__.py:2405
+#: ../yum/__init__.py:2411 ../yum/__init__.py:2493 ../yum/__init__.py:2497
+#: ../yum/__init__.py:2814
+#, python-format
+msgid "No Group named %s exists"
+msgstr "Групи з назвою %s не існує"
+
+#: ../yum/__init__.py:2386 ../yum/__init__.py:2513
+#, python-format
+msgid "package %s was not marked in group %s"
+msgstr "пакунок %s було позначено у групі %s"
+
+#: ../yum/__init__.py:2433
+#, python-format
+msgid "Adding package %s from group %s"
+msgstr "Додавання пакунка %s з групи %s"
+
+#: ../yum/__init__.py:2437
+#, python-format
+msgid "No package named %s available to be installed"
+msgstr "Не вдалося знайти пакунок з назвою %s для встановлення"
+
+#: ../yum/__init__.py:2539
+#, python-format
+msgid "Package tuple %s could not be found in packagesack"
+msgstr "У наборі пакунків не вдалося знайти кортеж пакунків %s"
+
+#: ../yum/__init__.py:2558
+#, python-format
+msgid "Package tuple %s could not be found in rpmdb"
+msgstr "У базі даних RPM не вдалося знайти кортеж пакунків %s"
+
+#: ../yum/__init__.py:2614 ../yum/__init__.py:2664
+msgid "Invalid version flag"
+msgstr "Некоректний прапорець версії"
+
+#: ../yum/__init__.py:2634 ../yum/__init__.py:2639
+#, python-format
+msgid "No Package found for %s"
+msgstr "Пакунків з %s не знайдено"
+
+#: ../yum/__init__.py:2855
+msgid "Package Object was not a package object instance"
+msgstr "Об’єкт пакунка не був екземпляром об’єкта пакунка"
+
+#: ../yum/__init__.py:2859
+msgid "Nothing specified to install"
+msgstr "Список встановлення порожній"
+
+#: ../yum/__init__.py:2875 ../yum/__init__.py:3652
+#, python-format
+msgid "Checking for virtual provide or file-provide for %s"
+msgstr "Пошук віртуальних супутніх пакунків або файлів для %s"
+
+#: ../yum/__init__.py:2881 ../yum/__init__.py:3197 ../yum/__init__.py:3365
+#: ../yum/__init__.py:3658
+#, python-format
+msgid "No Match for argument: %s"
+msgstr "Відповідника параметра не знайдено: %s"
+
+#: ../yum/__init__.py:2957
+#, python-format
+msgid "Package %s installed and not available"
+msgstr "Пакунок %s вже встановлено, його не можна позначити"
+
+#: ../yum/__init__.py:2960
+msgid "No package(s) available to install"
+msgstr "Немає доступних для встановлення пакунків"
+
+#: ../yum/__init__.py:2972
+#, python-format
+msgid "Package: %s  - already in transaction set"
+msgstr "Пакунок: %s  — вже у наборі операцій"
+
+#: ../yum/__init__.py:2998
+#, python-format
+msgid "Package %s is obsoleted by %s which is already installed"
+msgstr "Пакунок %s став застарілим після встановлення %s"
+
+#: ../yum/__init__.py:3001
+#, python-format
+msgid "Package %s is obsoleted by %s, trying to install %s instead"
+msgstr ""
+"Пакунок %s став застарілим після встановлення %s, спробуємо встановити "
+"замість нього %s"
+
+#: ../yum/__init__.py:3009
+#, python-format
+msgid "Package %s already installed and latest version"
+msgstr "Пакунок %s вже встановлено, його версія є найсвіжішою"
+
+#: ../yum/__init__.py:3023
+#, python-format
+msgid "Package matching %s already installed. Checking for update."
+msgstr "Відповідник пакунка %s вже встановлено. Перевірка існування оновлень."
+
+#. update everything (the easy case)
+#: ../yum/__init__.py:3126
+msgid "Updating Everything"
+msgstr "Повне оновлення"
+
+#: ../yum/__init__.py:3147 ../yum/__init__.py:3262 ../yum/__init__.py:3289
+#: ../yum/__init__.py:3315
+#, python-format
+msgid "Not Updating Package that is already obsoleted: %s.%s %s:%s-%s"
+msgstr "Неоновлюваний пакунок, який вже застарів: %s.%s %s:%s-%s"
+
+#: ../yum/__init__.py:3182 ../yum/__init__.py:3362
+#, python-format
+msgid "%s"
+msgstr "%s"
+
+#: ../yum/__init__.py:3253
+#, python-format
+msgid "Package is already obsoleted: %s.%s %s:%s-%s"
+msgstr "Пакунок вже застарілий: %s.%s %s:%s-%s"
+
+#: ../yum/__init__.py:3284
+#, python-format
+msgid "Not Updating Package that is obsoleted: %s"
+msgstr "Неоновлюваний пакунок, який застарів: %s"
+
+#: ../yum/__init__.py:3293 ../yum/__init__.py:3319
+#, python-format
+msgid "Not Updating Package that is already updated: %s.%s %s:%s-%s"
+msgstr "Неоновлюваний пакунок, який було оновлено раніше: %s.%s %s:%s-%s"
+
+#: ../yum/__init__.py:3378
+msgid "No package matched to remove"
+msgstr "Відповідного пакунка для вилучення не знайдено"
+
+#: ../yum/__init__.py:3412
+#, python-format
+msgid "Cannot open: %s. Skipping."
+msgstr "Не вдалося відкрити: %s. Пропускаємо."
+
+#: ../yum/__init__.py:3415 ../yum/__init__.py:3514 ../yum/__init__.py:3598
+#, python-format
+msgid "Examining %s: %s"
+msgstr "Перевірка %s: %s"
+
+#: ../yum/__init__.py:3423 ../yum/__init__.py:3517 ../yum/__init__.py:3601
+#, python-format
+msgid "Cannot add package %s to transaction. Not a compatible architecture: %s"
+msgstr "Не вдалося додати пакунок %s до операції. Несумісна архітектура: %s"
+
+#: ../yum/__init__.py:3431
+#, python-format
+msgid ""
+"Package %s not installed, cannot update it. Run yum install to install it "
+"instead."
+msgstr ""
+"Пакунок %s не встановлено, не вдалося оновити його. Віддайте команду yum "
+"install, щоб встановити цей пакунок."
+
+#: ../yum/__init__.py:3460 ../yum/__init__.py:3522 ../yum/__init__.py:3606
+#, python-format
+msgid "Excluding %s"
+msgstr "Виключення %s"
+
+#: ../yum/__init__.py:3465
+#, python-format
+msgid "Marking %s to be installed"
+msgstr "Позначення %s для встановлення"
+
+#: ../yum/__init__.py:3471
+#, python-format
+msgid "Marking %s as an update to %s"
+msgstr "Позначення %s як оновлення %s"
+
+#: ../yum/__init__.py:3478
+#, python-format
+msgid "%s: does not update installed package."
+msgstr "%s: не оновлює встановлений пакунок."
+
+#: ../yum/__init__.py:3511 ../yum/__init__.py:3595
+#, python-format
+msgid "Cannot open file: %s. Skipping."
+msgstr "Не вдалося відкрити файл %s. Пропускаємо."
+
+#: ../yum/__init__.py:3541
+msgid "Problem in reinstall: no package matched to remove"
+msgstr "Проблема з перевстановленням: не виявлено пакунків для вилучення"
+
+#: ../yum/__init__.py:3554 ../yum/__init__.py:3686
+#, python-format
+msgid "Package %s is allowed multiple installs, skipping"
+msgstr ""
+"Пакунок %s можна встановлювати паралельно з іншими версіями, пропускаємо"
+
+#: ../yum/__init__.py:3575
+#, python-format
+msgid "Problem in reinstall: no package %s matched to install"
+msgstr ""
+"Проблема з перевстановленням: не виявлено відповідного пакунка %s для "
+"встановлення"
+
+#: ../yum/__init__.py:3678
+msgid "No package(s) available to downgrade"
+msgstr "Немає доступних для зниження версії пакунків"
+
+#: ../yum/__init__.py:3731
+#, python-format
+msgid "No Match for available package: %s"
+msgstr "Немає відповідників для доступного пакунка: %s"
+
+#: ../yum/__init__.py:3738
+#, python-format
+msgid "Only Upgrade available on package: %s"
+msgstr "Для пакунка доступне лише оновлення: %s"
+
+#: ../yum/__init__.py:3808 ../yum/__init__.py:3845
+#, python-format
+msgid "Failed to downgrade: %s"
+msgstr "Не вдалося знизити версію: %s"
+
+#: ../yum/__init__.py:3877
+#, python-format
+msgid "Retrieving GPG key from %s"
+msgstr "Отримання ключа GPG з %s"
+
+#: ../yum/__init__.py:3897
+msgid "GPG key retrieval failed: "
+msgstr "Невдала спроба отримання ключа GPG: "
+
+#: ../yum/__init__.py:3903
+#, python-format
+msgid "Invalid GPG Key from %s: %s"
+msgstr "Некоректний ключ GPG з %s: %s"
+
+#: ../yum/__init__.py:3912
+#, python-format
+msgid "GPG key parsing failed: key does not have value %s"
+msgstr "Помилка обробник ключа GPG: у ключі немає значення %s"
+
+#: ../yum/__init__.py:3944
+#, python-format
+msgid "GPG key at %s (0x%s) is already installed"
+msgstr "Ключ GPG у %s (0x%s) вже встановлено"
+
+#. Try installing/updating GPG key
+#: ../yum/__init__.py:3949 ../yum/__init__.py:4011
+#, python-format
+msgid "Importing GPG key 0x%s \"%s\" from %s"
+msgstr "Імпортування ключа GPG 0x%s «%s» з %s"
+
+#: ../yum/__init__.py:3966
+msgid "Not installing key"
+msgstr "Ключ не встановлюється"
+
+#: ../yum/__init__.py:3972
+#, python-format
+msgid "Key import failed (code %d)"
+msgstr "Помилка імпортування ключа (код %d)"
+
+#: ../yum/__init__.py:3973 ../yum/__init__.py:4032
+msgid "Key imported successfully"
+msgstr "Ключ успішно імпортовано"
+
+#: ../yum/__init__.py:3978 ../yum/__init__.py:4037
+#, python-format
+msgid ""
+"The GPG keys listed for the \"%s\" repository are already installed but they "
+"are not correct for this package.\n"
+"Check that the correct key URLs are configured for this repository."
+msgstr ""
+"Ключі GPG зі списку сховища «%s» вже встановлено, але вони є некоректними "
+"для цього пакунка.\n"
+"Перевірте, чи правильно вказано адреси URL для цього сховища."
+
+#: ../yum/__init__.py:3987
+msgid "Import of key(s) didn't help, wrong key(s)?"
+msgstr "Імпортування ключів не допомогло, помилкові ключі?"
+
+#: ../yum/__init__.py:4006
+#, python-format
+msgid "GPG key at %s (0x%s) is already imported"
+msgstr "Ключ GPG у %s (0x%s) вже імпортовано"
+
+#: ../yum/__init__.py:4026
+#, python-format
+msgid "Not installing key for repo %s"
+msgstr "Ключ сховища %s не встановлюється"
+
+#: ../yum/__init__.py:4031
+msgid "Key import failed"
+msgstr "Помилка імпортування ключа"
+
+#: ../yum/__init__.py:4157
+msgid "Unable to find a suitable mirror."
+msgstr "Не вдалося знайти відповідного дзеркала."
+
+#: ../yum/__init__.py:4159
+msgid "Errors were encountered while downloading packages."
+msgstr "Під час спроби звантаження пакунків сталися помилки."
+
+#: ../yum/__init__.py:4209
+#, python-format
+msgid "Please report this error at %s"
+msgstr "Повідомте про цю помилку за адресою %s"
+
+#: ../yum/__init__.py:4233
+msgid "Test Transaction Errors: "
+msgstr "Помилки під час тестування: "
+
+#: ../yum/__init__.py:4334
+#, python-format
+msgid "Could not set cachedir: %s"
+msgstr "Не вдалося визначити теку кешування: %s"
+
+#. Mostly copied from YumOutput._outKeyValFill()
+#: ../yum/plugins.py:202
+msgid "Loaded plugins: "
+msgstr "Завантажені додатки: "
+
+#: ../yum/plugins.py:216 ../yum/plugins.py:222
+#, python-format
+msgid "No plugin match for: %s"
+msgstr "Не виявлено відповідника додатка %s"
+
+#: ../yum/plugins.py:252
+#, python-format
+msgid "Not loading \"%s\" plugin, as it is disabled"
+msgstr "Додаток «%s» не завантажується, оскільки його вимкнено"
+
+#. Give full backtrace:
+#: ../yum/plugins.py:264
+#, python-format
+msgid "Plugin \"%s\" can't be imported"
+msgstr "Додаток «%s» не можна імпортувати"
+
+#: ../yum/plugins.py:271
+#, python-format
+msgid "Plugin \"%s\" doesn't specify required API version"
+msgstr "Додаток «%s» не визначає потрібної версії API"
+
+#: ../yum/plugins.py:276
+#, python-format
+msgid "Plugin \"%s\" requires API %s. Supported API is %s."
+msgstr "Для додатка «%s» потрібна версія API %s. Поточна версія API — %s."
+
+#: ../yum/plugins.py:309
+#, python-format
+msgid "Loading \"%s\" plugin"
+msgstr "Завантаження додатка «%s»"
+
+#: ../yum/plugins.py:316
+#, python-format
+msgid ""
+"Two or more plugins with the name \"%s\" exist in the plugin search path"
+msgstr "За адресою пошуку додатків виявлено декілька додатків з назвою «%s»"
+
+#: ../yum/plugins.py:336
+#, python-format
+msgid "Configuration file %s not found"
+msgstr "Файл налаштувань %s не знайдено"
+
+#. for
+#. Configuration files for the plugin not found
+#: ../yum/plugins.py:339
+#, python-format
+msgid "Unable to find configuration file for plugin %s"
+msgstr "Не вдалося знайти файл налаштувань для додатка %s"
+
+#: ../yum/plugins.py:501
+msgid "registration of commands not supported"
+msgstr "підтримки реєстрації команд не передбачено"
+
+#: ../yum/rpmsack.py:102
+msgid "has missing requires of"
+msgstr "не має потрібних залежностей"
+
+#: ../yum/rpmsack.py:105
+msgid "has installed conflicts"
+msgstr "конфліктує зі встановленими пакунками"
+
+#: ../yum/rpmsack.py:114
+#, python-format
+msgid "%s is a duplicate with %s"
+msgstr "%s є дублікатом з %s"
+
+#: ../yum/rpmtrans.py:79
+msgid "Repackaging"
+msgstr "Перепакування"
+
+#: ../rpmUtils/oldUtils.py:33
+#, python-format
+msgid "Header cannot be opened or does not match %s, %s."
+msgstr "Не вдалося відкрити заголовок або не він не відповідає %s, %s."
+
+#: ../rpmUtils/oldUtils.py:53
+#, python-format
+msgid "RPM %s fails md5 check"
+msgstr "RPM %s не пройшов перевірки на md5"
+
+#: ../rpmUtils/oldUtils.py:151
+msgid "Could not open RPM database for reading. Perhaps it is already in use?"
+msgstr ""
+"Не вдалося відкрити базу даних RPM для читання. Можливо, цю базу вже "
+"використовує інша програма?"
+
+#: ../rpmUtils/oldUtils.py:183
+msgid "Got an empty Header, something has gone wrong"
+msgstr "Отримано порожній заголовок, сталася якась помилка"
+
+#: ../rpmUtils/oldUtils.py:253 ../rpmUtils/oldUtils.py:260
+#: ../rpmUtils/oldUtils.py:263 ../rpmUtils/oldUtils.py:266
+#, python-format
+msgid "Damaged Header %s"
+msgstr "Пошкоджений заголовок %s"
+
+#: ../rpmUtils/oldUtils.py:281
+#, python-format
+msgid "Error opening rpm %s - error %s"
+msgstr "Помилка під час відкриття rpm %s — помилка %s"
+
+
